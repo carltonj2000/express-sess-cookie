@@ -1,0 +1,21 @@
+version: "3.7"
+
+services:
+  mongo:
+    image: mongo
+    environment:
+      MONGO_INITDB_ROOT_USERNAME_FILE: /run/secrets/mongo_initdb_root_username
+      MONGO_INITDB_ROOT_PASSWORD_FILE: /run/secrets/mongo_initdb_root_password
+    secrets:
+      - mongo_initdb_root_username
+      - mongo_initdb_root_password
+    ports:
+      - 27017:27017
+    volumes:
+      - ./mongoDbData:/data/db
+
+secrets:
+  mongo_initdb_root_username:
+    file: ./secret/mongo_initdb_root_username.txt
+  mongo_initdb_root_password:
+    file: ./secret/mongo_initdb_root_password.txt
