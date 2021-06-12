@@ -1,0 +1,7 @@
+<%- include("../partials/header"); %>
+<h1>Dashboard</h1>
+<h3>Users <%= username %> is authenticated</h3>
+<form action="/logout" method="POST">
+  <button type="submit">Logout</button>
+</form>
+<%- include("../partials/footer"); %>

@@ -6,8 +6,10 @@
     "dev": "nodemon ./src/server.js"
   },
   "dependencies": {
+    "bcryptjs": "^2.4.3",
     "connect-mongodb-session": "^2.4.1",
     "dotenv": "^10.0.0",
+    "ejs": "^3.1.6",
     "express": "^4.17.1",
     "express-session": "^1.17.2",
     "mongoose": "^5.12.13"

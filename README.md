@@ -15,3 +15,7 @@ db.createUser({ user: 'new_username', pwd: 'new_password',
     roles: [ { role: 'readWrite', db: 'your_new_database' } ]
 })
 ```
+
+## Reference
+
+- [How To Use EJS to Template Your Node Application](https://www.digitalocean.com/community/tutorials/how-to-use-ejs-to-template-your-node-application)
